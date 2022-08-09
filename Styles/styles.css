@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --enfasis: #34b0be;
+  --background-icons: #d1ceca;
+  --background-main: #242635;
+  --white: #FFFFFF;
+  --letter-title: 5rem;
+  --letter-subtitle: 3.2rem;
+  --letter-subsection: 1.8rem;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--background-main);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 300;
+  margin: 0;
+}
+
+h2, p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+
+/* Navegacion Principal */
+
+.div-nav {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 3rem;
+}
+
+.main-nav {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  color: var(--enfasis);
+  font-weight: 700;
+}
+
+/* Header */
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+/*.background-header::before {
+  content: "";
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}*/
+
+.hero {
+  width: 100%;
+  height: 60rem;
+  box-sizing: border-box;
+}
+
+.hero p {
+  font-size: var(--letter-subsection);
+  color: var(--white);
+}
+
+.font-photo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.font-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.photo-desktop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.photo-desktop img {
+  width: 30rem;
+}
+
+.circle {
+  width: 45rem;
+  margin-top: 3rem;
+}
+
+.flex-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  gap: 4rem;
+}
+
+
+.rectangle-gas {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+}
+
+.sub-rectangle-gas {
+  background-color: #535b7e;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.rectangle-gas img {
+  width: 8rem;
+}
+
+.icon-social-networks {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.card-icon {
+  background-color: var(--background-icons);
+  width: 15rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+
+.title {
+  display: inline;
+} 
+
+.title span {
+  font-size: var(--letter-title);
+  font-weight: 700;
+}
+
+.color-span {
+  color: var(--enfasis);
+  font-weight: 700;
+}
+
+.size-img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon {
+  display: flex;
+  background-color: var(--background-icons);
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/*  Sección Main  */
+
+.main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 110rem;
+}
+
+.subtitle{
+  font-weight: 700;
+  font-size: var(--letter-subtitle);
+  color: var(--enfasis);
+}
+
+.text-main {
+  color: var(--white);
+}
+
+.card-service {
+  
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 26rem;
+  height: 34rem;
+}
+
+.front-card-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem 0;
+}
+
+.back-card-service {
+  background-color: var(--white);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+}
+
+
+.card-service p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.icon-card-service {
+  width: 10rem;
+
+}
+
+.elipse {
+  width: 26rem;
+  position: relative;
+}
+
+.div-cards {
+  display: flex;
+  gap: 8rem;
+}
+
+/* Sección de Mis Habilidades */
+
+.container__skills {
+  padding: 2rem;
+  width: 68%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-skills p {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.container__bar {
+  background-color: var(--white);
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.bar__skill {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  text-align: right;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.marketing {
+  background-color: var(--enfasis);
+  animation: fillmarketing 2s forwards;
+}
+
+.UIDesign {
+  background-color: var(--enfasis);
+  animation: fillUI 2s forwards;
+}
+
+.UXResearch {
+  background-color: var(--enfasis);
+  animation: fillUX 2s forwards;
+}
+
+@keyframes fillmarketing{
+  0%{width: 0;}
+  100%{width: 95%;}
+}
+
+@keyframes fillUI{
+  0%{width: 0;}
+  100%{width: 95%;}
+}
+
+@keyframes fillUX{
+  0%{width: 0;}
+  100%{width: 80%;}
+}
